@@ -24,10 +24,10 @@ Adding the `-XX:-LoopUnswitching` JVM argument fixes this issue, as referenced
 in a similar bug reported in [here](https://issues.apache.org/jira/browse/HTTPCLIENT-1173).
 
 ##How to run
-```bash
-    git clone https://github.com/rholder/jvm-loop-unswitching-bug.git
-    cd jvm-loop-unswitching-bug
-    ./gradlew clean test --info
+```
+git clone https://github.com/rholder/jvm-loop-unswitching-bug.git
+cd jvm-loop-unswitching-bug
+./gradlew clean test --info
 ```
 You may need to repeat the test command a few times until the segmentation fault
 appears.
