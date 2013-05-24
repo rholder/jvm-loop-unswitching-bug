@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+group = 'com.github.rholder'
+version = '1.0.0-SNAPSHOT'
+ext.packaging = 'jar'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.apache.httpcomponents:httpclient:4.2.2"
+    compile "commons-lang:commons-lang:2.6"
+
+    // junit testing
+    testCompile "junit:junit:4.1"
+}
+
+// enable Gradle Wrapper support for bootstrapping with specific version
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.5'
+}
