@@ -23,14 +23,32 @@ This appears to exhibit the same behavior as the bug reported [here](https://cod
 Adding the `-XX:-LoopUnswitching` JVM argument fixes this issue, as referenced
 in a similar bug reported in [here](https://issues.apache.org/jira/browse/HTTPCLIENT-1173).
 
-##Tested JVM's
-* java version "1.7.0_21"
+##How to run
+```bash
+    git clone https://github.com/rholder/jvm-loop-unswitching-bug.git
+    cd jvm-loop-unswitching-bug
+    ./gradlew clean test --info
+```
+You may need to repeat the test command a few times until the segmentation fault
+appears.
+
+##Failing JVM's Tested
+* java full version "1.7.0_21-b02"
   * OpenJDK Runtime Environment (IcedTea 2.3.9) (7u21-2.3.9-1ubuntu1)
   * OpenJDK 64-Bit Server VM (build 23.7-b01, mixed mode)
+* java full version "1.7.0_17-b02"
+  * Java(TM) SE Runtime Environment (build 1.7.0_17-b02)
+  * Java HotSpot(TM) 64-Bit Server VM (build 23.7-b01, mixed mode)
+* java full version "1.7.0_15-b20"
+  * OpenJDK Runtime Environment (IcedTea7 2.3.7) (7u15-2.3.7-0ubuntu1~12.04.1)
+  * OpenJDK 64-Bit Server VM (build 23.7-b01, mixed mode)
+* java full version "1.6.0_24-b24"
+  * OpenJDK Runtime Environment (IcedTea6 1.11.5) (amazon-53.1.11.5.47.amzn1-x86_64)
+  * OpenJDK 64-Bit Server VM (build 20.0-b12, mixed mode)
 
 ##Additional Notes
-Current testing indicates that on a single-core machine this bug does not
-manifest itself.
+Current testing indicates that both single and multi-core machines cause this
+bug to manifest itself.
 
 ##Contributors
 * Ray Holder (rholder)
