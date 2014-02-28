@@ -33,6 +33,9 @@ You may need to repeat the test command a few times until the segmentation fault
 appears.
 
 ##Failing JVM's Tested
+* java full version "1.7.0_51-b13"
+  * Java(TM) SE Runtime Environment (build 1.7.0_51-b13)
+  * Java HotSpot(TM) 64-Bit Server VM (build 24.51-b03, mixed mode)
 * java full version "1.7.0_21-b02"
   * OpenJDK Runtime Environment (IcedTea 2.3.9) (7u21-2.3.9-1ubuntu1)
   * OpenJDK 64-Bit Server VM (build 23.7-b01, mixed mode)
