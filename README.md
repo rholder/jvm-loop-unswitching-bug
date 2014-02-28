@@ -66,3 +66,4 @@ bug to manifest itself.
 ##Contributors
 * Ray Holder (rholder)
 * Chad Bayer (chadbay)
+* Thibaud Lepretre (kakawait)
