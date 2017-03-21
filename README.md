@@ -1,4 +1,4 @@
-##Overview
+## Overview
 This project rolls up a repeatable test case that non-deterministically causes
 the JVM to produce a segmentation fault of the following form:
 
@@ -25,7 +25,7 @@ in a similar bug reported in [here](https://issues.apache.org/jira/browse/HTTPCL
 
 Upstream problem has been reported: [java 7 branch](http://bugs.java.com/view_bug.do?bug_id=8025398) and [java 8 branch](http://bugs.java.com/view_bug.do?bug_id=8021898)
 
-##How to run
+## How to run
 ```
 git clone https://github.com/rholder/jvm-loop-unswitching-bug.git
 cd jvm-loop-unswitching-bug
@@ -34,7 +34,7 @@ cd jvm-loop-unswitching-bug
 You may need to repeat the test command a few times until the segmentation fault
 appears.
 
-##Failing JVM's Tested
+## Failing JVM's Tested
 * java full version "1.7.0_51-b13"
   * Java(TM) SE Runtime Environment (build 1.7.0_51-b13)
   * Java HotSpot(TM) 64-Bit Server VM (build 24.51-b03, mixed mode)
@@ -51,7 +51,7 @@ appears.
   * OpenJDK Runtime Environment (IcedTea6 1.11.5) (amazon-53.1.11.5.47.amzn1-x86_64)
   * OpenJDK 64-Bit Server VM (build 20.0-b12, mixed mode)
 
-##Succeeding JVM's Tested
+## Succeeding JVM's Tested
 * java version "1.7.0_60-ea" (Early Access)
   * Java(TM) SE Runtime Environment (build 1.7.0_60-ea-b04)
   * Java HotSpot(TM) 64-Bit Server VM (build 24.60-b07, mixed mode)
@@ -59,11 +59,11 @@ appears.
   * Java(TM) SE Runtime Environment (build 1.8.0-b129)
   * Java HotSpot(TM) 64-Bit Server VM (build 25.0-b69, mixed mode)
 
-##Additional Notes
+## Additional Notes
 Current testing indicates that both single and multi-core machines cause this
 bug to manifest itself.
 
-##Contributors
+## Contributors
 * Ray Holder (rholder)
 * Chad Bayer (chadbay)
 * Thibaud Lepretre (kakawait)
